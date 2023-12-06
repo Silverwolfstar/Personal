@@ -1,0 +1,23 @@
+<-- Original -->   <--Copies--->   <------------Clues---------------------->
+ Comp:    User:    Comp:  User:     sClue starts as ""
+R G B W  B G W G    RGBW   BGWG
+
+Check exact: R with B, G with G, B with W and W with G giving:
+
+R G B W  B G W G    R.BW   B.WG    G is found so sClue + " X" Got one
+Note the .'s replacing the color matched.
+
+Next we look for right colors wrong position.
+                    R.BW   B.WG    R not found in B.WG
+                    ..BW   B.WG    So we . the R
+                    ..BW   B.WG    B is found so sClue + " O" Got one 
+                    ...W   ..WG    Both B's dotted
+                    ...W   ..WG    W is found so now SClue + " O" another
+                    ....   ...G    Both W's dotted
+
+Algorithm done because all "...." are left in copy Comp   
+
+The sClue would be: " X O O"
+
+
+   
